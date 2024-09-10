@@ -1,0 +1,328 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1c1c1c;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .menu ul li {
+    margin: 0 10px;
+}
+
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu ul li a:hover {
+    color: #ff4757;
+}
+
+/* Food Search Section */
+.food-search {
+    background: url('images/search-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+.food-search input[type="search"] {
+    padding: 10px 20px;
+    width: 50%;
+    border: 2px solid #ff4757;
+    border-radius: 25px;
+    margin-right: 10px;
+    outline: none;
+    transition: width 0.4s ease;
+}
+
+.food-search input[type="search"]:focus {
+    width: 60%;
+}
+
+.food-search input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.food-search input[type="submit"]:hover {
+    background-color: #ff6b81;
+}
+
+/* Categories Section */
+.categories {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.categories .box-3 {
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categories .box-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.categories .box-3 img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.categories .box-3:hover img {
+    transform: scale(1.1);
+}
+
+.categories .float-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Food Menu Section */
+.food-menu {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.food-menu-box {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.food-menu-box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.food-menu-img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.food-menu-img img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.food-menu-box:hover .food-menu-img img {
+    transform: scale(1.1);
+}
+
+.food-menu-desc {
+    flex: 2;
+}
+
+.food-menu-desc h4 {
+    margin-bottom: 10px;
+    color: #ff4757;
+}
+
+.food-menu-desc p.food-price {
+    font-size: 18px;
+    color: #ff4757;
+    margin-bottom: 10px;
+}
+
+.food-menu-desc a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4757;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.food-menu-desc a:hover {
+    background-color: #ff6b81;
+}
+
+/* Social Section */
+.social {
+    background-color: #1c1c1c;
+    padding: 30px 0;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social ul li {
+    margin: 0 15px;
+}
+
+.social ul li a img {
+    width: 48px;
+    transition: transform 0.3s ease;
+}
+
+.social ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p a {
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer p a:hover {
+    color: #ff6b81;
+}
+
+/* Utilities */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
